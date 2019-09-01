@@ -7,7 +7,87 @@
 
 .main-header {
    width: @width;
+   min-height: 1024px;
    background-image: url(../img/photo-head.png);
+}
+
+.header-logo {
+    display: block;
+    margin: 35px 0 0 376px;
+    width: 64px;
+    height: 56px;
+    background-image: url(../img/waxon-icon.png);
+    background-repeat: no-repeat;
+    float: left;
+    text-decoration: none;
+}
+
+.header-logo-txt {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    margin: 6px 0 0 64px;
+}
+
+.header-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #fff;
+    padding-top: 57px;
+    margin: 0;
+}
+
+.header-nav-list {
+   display: flex;
+   flex-wrap: nowrap;
+   flex-direction: row;
+   justify-content: center;
+    margin: 0 0 0 -100px;
+}
+
+.header-nav-item {
+    display: block;
+    margin: 0 30px 0 0;
+    list-style-type: none;
+}
+
+.header-nav-item:hover {
+    color: #c7b299;
+}
+
+.header-nav-corz {
+    display: block;
+    margin: -5px 26px 0 0;
+    background-image: url(../img/icon-corzina.png);
+    width: 18px;
+    height: 24px;
+    background-color: transparent;
+    outline-style: none;
+    border: none;
+    color: #fff;
+}
+
+.header-nav-search {
+    display: block;
+    margin: -5px 0 0 0;
+    background-image: url(../img/icon-search.png);
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    outline-style: none;
+    border: none;
+    color: #fff;
+    
 }
 
 .content {
