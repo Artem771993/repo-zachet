@@ -5,6 +5,9 @@
   width: 1920px;
   min-height: 1024px;
   background-image: url(../img/photo-head.png);
+  margin: 0 auto;
+  box-sizing: border-box;
+  clear: both;
 }
 .header-logo {
   display: block;
@@ -13,8 +16,12 @@
   height: 56px;
   background-image: url(../img/waxon-icon.png);
   background-repeat: no-repeat;
+  color: #fff;
   float: left;
   text-decoration: none;
+}
+.header-logo:hover {
+  color: #c7b299;
 }
 .header-logo-txt {
   display: block;
@@ -25,6 +32,9 @@
   color: #fff;
   text-decoration: none;
   margin: 6px 0 0 64px;
+}
+.header-logo-txt:hover {
+  color: #c7b299;
 }
 .header-nav {
   display: flex;
@@ -69,12 +79,90 @@
   display: block;
   margin: -5px 0 0 0;
   background-image: url(../img/icon-search.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 24px;
   height: 24px;
   background-color: transparent;
-  outline-style: none;
+  outline: none;
   border: none;
   color: #fff;
+}
+.header-nav-search:focus {
+  width: 300px;
+  transition: 1s ease-out;
+  background-position: right;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+.header-content {
+  width: 1920px;
+  margin: 280px 0 0 0;
+  display: flex;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  clear: both;
+}
+.header-content-button-left {
+  display: block;
+  width: 40px;
+  min-height: 73px;
+  float: left;
+  margin: 100px 0 0 150px;
+  background-image: url(../img/arrow-left.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  outline: none;
+  border: none;
+}
+.header-content-txt {
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.header-content-txt-h2 {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+.header-content-txt-h1 {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+.header-content-txt-p {
+  display: block;
+  width: 500px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+.header-content-button-right {
+  display: block;
+  width: 40px;
+  min-height: 73px;
+  float: right;
+  margin: 100px 150px 0 0;
+  background-image: url(../img/arrow-right.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  outline: none;
+  border: none;
 }
 .content {
   width: 1920px;
