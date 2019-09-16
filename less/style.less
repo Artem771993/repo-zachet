@@ -11,19 +11,17 @@
    width: @width;
    min-height: 1024px;
    background-image: url(../img/photo-head.png);
-    margin: 0 auto;
-    box-sizing: border-box;
-    clear: both;
+   margin: 0 auto;
+   box-sizing: border-box;
+   clear: both;
 }
 
 
 .header-logo {
     display: block;
-    margin: 35px 0 0 376px;
-    width: 64px;
-    height: 56px;
-    background-image: url(../img/waxon-icon.png);
-    background-repeat: no-repeat;
+    margin: 35px 0 0 375px;
+    width: 200px;
+    min-height: 59px;
     color: #fff;
     float: left;
     text-decoration: none;
@@ -31,21 +29,37 @@
 
 .header-logo:hover {
     color: @hover-color;
+    fill: @hover-color;
+}
+
+.header-logo-icon {
+    width: 66px;
+    height: 59px;
+    fill: #fff;
+    float: left;
+}
+
+.header-logo-icon:hover {
+    fill: @hover-color;
+    color: @hover-color;
 }
 
 .header-logo-txt {
     display: block;
+    width: 200px;
     font-family: 'Raleway', sans-serif;
     font-size: 34px;
     line-height: 1.2;
     font-weight: 400;
     color: #fff;
+    fill: #fff;
     text-decoration: none;
-    margin: 6px 0 0 64px;
+    margin: 10px 0 0 64px;
 }
 
 .header-logo-txt:hover {
     color: @hover-color;
+    fill: @hover-color;
 }
 
 .header-nav {
@@ -67,7 +81,7 @@
    flex-wrap: nowrap;
    flex-direction: row;
    justify-content: center;
-    margin: 0 0 0 -100px;
+    margin: 0 0 0 -250px;
 }
 
 .header-nav-item {
@@ -116,7 +130,7 @@
 
 .header-content {
     width: @width;
-    margin: 280px 0 0 0;
+    padding: 260px 0 0 0;
     display: flex;
     flex-wrap: nowrap;
     box-sizing: border-box;
@@ -125,15 +139,18 @@
 
 .header-content-button-left {
     display: block;
-    width: 40px;
-    min-height: 73px;
+    width: 42px;
+    min-height: 75px;
     float: left;
-    margin: 100px 0 0 150px;
-    background-image: url(../img/arrow-left.png);
+    margin: 0 0 0 150px;
     background-color: transparent;
-    background-repeat: no-repeat;
     outline: none;
     border: none;
+    fill: #fff;
+}
+
+.header-content-button-left:hover {
+    fill: @hover-color;
 }
 
 .header-content-txt {
@@ -179,8 +196,8 @@
 
 .header-content-start {
     display: block;
-    width: 180px;
-    min-height: 53px;
+    width: 190px;
+    min-height: 56px;
     box-sizing: border-box;
     text-decoration: none;
     margin: 50px auto;
@@ -188,7 +205,10 @@
 
 .header-content-start-wrap {
     display: block;
-    padding: 20px 35px 20px 35px;
+    box-sizing: border-box;
+    width: 171px;
+    min-height: 56px;
+    padding: 20px 0 20px 0;
     background-color: #998675;
     border-radius: 3.0px;
     margin: 0 auto;
@@ -198,6 +218,7 @@
     font-weight: 800;
     text-transform: uppercase;
     color: #fff;
+    text-align: center;
     }
 
 .header-content-start-wrap:hover {
@@ -209,12 +230,42 @@
     width: 40px;
     min-height: 73px;
     float: right;
-    margin: 100px 150px 0 0;
-    background-image: url(../img/arrow-right.png);
+    margin: 0 150px 0 0;
     background-color: transparent;
-    background-repeat: no-repeat;
     outline: none;
     border: none;
+    fill: #fff;
+}
+
+.header-content-button-right:hover {
+    fill: @hover-color;
+}
+
+.header-content-radio-wrap {
+    display: flex;
+    width: 110px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.header-content-radio {
+  width: 11px;
+  height: 11px;
+//  opacity: 0.5;
+  background-color: #fff;
+  margin: 5px;
+  box-sizing: border-box;
+    text-decoration: none;
+}
+
+.header-content-radio:hover {
+    width: 15px;
+    height: 15px;
+    box-sizing: border-box;
+    border: 2.0px solid #d3c1ad;
+    color: transparent;
+    text-decoration: none;
+    outline: none;
 }
 
 .content {
