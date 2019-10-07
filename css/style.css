@@ -258,6 +258,7 @@
   min-height: 375px;
   padding: 80px;
   box-sizing: border-box;
+  clear: both;
 }
 .content-help-item {
   display: block;
@@ -311,9 +312,124 @@
 }
 .content-ideas {
   display: block;
+  position: relative;
   width: 100%;
   min-height: 700px;
   background-color: #fbfaf8;
+  padding: 85px;
+  clear: both;
+  box-sizing: border-box;
+}
+.content-ideas-h {
+  display: block;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+  margin: 0 0 25px 0;
+}
+.content-ideas-p {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 757px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #8c8c8c;
+}
+.img-left {
+  float: left;
+  max-width: 770px !important;
+  height: auto !important;
+  position: absolute;
+  left: 345px;
+  bottom: 0px;
+}
+.img-left:hover {
+  z-index: 7;
+}
+.img-center {
+  margin: 0 auto;
+  margin-top: 18px;
+  max-width: 770px !important;
+  height: auto !important;
+  position: absolute;
+  left: 575px;
+  bottom: 0;
+  z-index: 5;
+}
+.img-right {
+  float: right;
+  max-width: 770px !important;
+  height: auto !important;
+  position: absolute;
+  right: 345px;
+  bottom: 0px;
+}
+.img-right:hover {
+  z-index: 7;
+}
+.reklama {
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-bottom: 45px;
+}
+.reklama-content-wr {
+  width: auto;
+  max-width: 545px;
+  margin-left: 375px;
+}
+.reklama-h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+}
+.colortext {
+  color: #c7b299;
+}
+.reklama-p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #615855;
+  margin: 10px 0 0 0;
+}
+.reklama-button {
+  width: 170px;
+  height: 50px;
+  background-color: #998675;
+  border-radius: 3.0px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  box-sizing: border-box;
+  float: right;
+  margin-right: 375px;
+  outline: none;
+  border: none;
+}
+.reklama-button:hover {
+  background-color: #eee;
+  color: #c7b299;
 }
 .main-footer {
   width: 100%;
